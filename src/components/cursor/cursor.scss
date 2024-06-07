@@ -1,0 +1,20 @@
+@import '../../app.scss';
+
+.default {
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    background-color: black;
+
+    @include mobile{
+        display:none;
+    }
+}
+
+@for $i from 0 through 15 {
+    .cursor#{$i} {
+      height: 20px - $i;
+      width: 20px - $i;
+    }
+  }
+  

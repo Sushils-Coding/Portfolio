@@ -1,0 +1,180 @@
+@import '../../app.scss';
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.flex:hover {
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+.level {
+    position: relative;
+}
+
+.level:hover:before {
+    content: 'intermidiate';
+    position: absolute;
+    bottom: 25px;
+    background-color: rgba(255, 255, 255, 0.544);
+    color: rgb(41, 37, 37);
+    font-style: italic;
+    font-size: small;
+    padding: 1px 5px;
+    border-radius: 14px 14px 14px 0;
+
+}
+
+.skills {
+    max-width: 1000px;
+    margin: 50px auto;
+    text-transform: capitalize;
+
+    .head {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        letter-spacing: 2px;
+        transition-duration: 0.5s;
+
+        .headText {
+            font-size: 40px;
+            font-weight: 900;
+            color: rgb(127, 148, 255);
+            padding: 0 12px;
+            position: relative;
+        }
+
+        span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            border-bottom: 2px solid #0ef;
+            border-radius: 15px;
+            transform: scale(0) translateY(50px);
+        }
+
+        p {
+            transform: scale(0) translateY(30px);
+
+            @include mobile {
+                text-align: center;
+            }
+        }
+
+    }
+
+    .headText:hover {
+        color: #0ef;
+    }
+
+    .headText:hover span {
+        transform: scale(1) translateY(0px);
+        transition-duration: .5s;
+    }
+
+    .head:hover p {
+        transform: scale(1) translateY(0);
+        transition-duration: .5s;
+    }
+
+    .cardContainer {
+        display: flex;
+        width: 100%;
+        height: 80vh;
+        color: black;
+
+        @include mobile {
+            flex-direction: column;
+
+        }
+
+        .card1 {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            width: 50%;
+            height: 100%;
+
+            @include mobile {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .card {
+                width: 90%;
+                min-height: 250px;
+                background-color: #0ef;
+                border-radius: 25px 0;
+
+                .frontend {
+                    text-align: center;
+                    margin: 10px;
+                    letter-spacing: 2px;
+                    font-size: larger;
+                }
+
+                .frontendSkills {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 25px;
+                    margin: 30px;
+                    font-size: 20px;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+
+                }
+            }
+        }
+
+        .card2 {
+            display: flex;
+            justify-content: end;
+            align-items: end;
+            width: 50%;
+            height: 100%;
+
+            @include mobile {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .card {
+                width: 90%;
+                height: 200px;
+                background-color: #0ef;
+                border-radius: 25px 0;
+
+                .backend {
+                    text-align: center;
+                    margin: 10px;
+                    letter-spacing: 2px;
+                    font-size: larger;
+                }
+
+                .backendSkills {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 25px;
+                    margin: 30px;
+                    font-size: 20px;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+
+                }
+            }
+
+        }
+    }
+
+}
