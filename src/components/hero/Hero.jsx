@@ -1,6 +1,7 @@
 import React from 'react'
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
 import { motion } from 'framer-motion'
+import ParticlesComponent from '../Particles'
 import './hero.scss'
 
 const textVariants = {
@@ -46,6 +47,7 @@ const Hero = () => {
     })
     return (
         <div className='hero'>
+            {/* <ParticlesComponent id='particles'/> */}
             <div className="wrapper">
                 <motion.div className="textContainer" variants={textVariants} initial='initial' animate='animate' >
                     <motion.h2 variants={textVariants} >Sushil Verma</motion.h2>

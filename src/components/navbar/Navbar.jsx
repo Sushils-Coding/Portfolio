@@ -57,13 +57,13 @@ const Navbar = () => {
           </motion.div>
           <div className="social">
 
-            <a href="https://www.facebook.com"><motion.img initial={{ opacity: 0, y: -30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }} src="/facebook.png" alt="facebook" /></a>
+            <a href="https://www.facebook.com" target='blank'><motion.img initial={{ opacity: 0, y: -30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }} src="/facebook.png" alt="facebook" /></a>
 
-            <a href="#"><motion.img initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.3 }} src="/github.png" alt="Github" /></a>
+            <a href="https://github.com/Sushils-Coding" target='blank'><motion.img initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.3 }} src="/github.png" alt="Github" /></a>
 
-            <a href="#"><motion.img initial={{ opacity: 0, y: -30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.6 }} src="/linkedin.png" alt="Linkedin" /></a>
+            <a href="https://www.linkedin.com/in/sushil-verma-679444297/" target='blank'><motion.img initial={{ opacity: 0, y: -30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.6 }} src="/linkedin.png" alt="Linkedin" /></a>
 
-            <a href="#"><motion.img initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.9 }} src="/instagram.png" alt="instagram" /></a>
+            <a href="https://www.instagram.com" target='blank'><motion.img initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.9 }} src="/instagram.png" alt="instagram" /></a>
           </div>
         </div>
       </motion.div>

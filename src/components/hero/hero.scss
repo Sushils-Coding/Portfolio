@@ -7,6 +7,13 @@
     overflow: hidden;
     position: relative;
     z-index: -1;
+    
+    #particles canvas{
+        height:30%;
+        width:100%;
+        position: absolute;
+        z-index: -1;
+    }
 
     .wrapper {
         max-width: 1000px;
