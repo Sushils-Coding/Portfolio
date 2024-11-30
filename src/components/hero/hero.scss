@@ -6,19 +6,27 @@
     // background: linear-gradient(180deg, #0c0c1d, #ccbc0c);
     overflow: hidden;
     position: relative;
-    z-index: -1;
+    z-index: 9;
     
     #particles canvas{
-        height:30%;
+        height:100%;
         width:100%;
         position: absolute;
         z-index: -1;
+    }
+    #matter canvas{
+        // border: 2px solid white;
+        // height:100%;
+        // width:100%;
+        position: absolute;
+        inset: 0;
     }
 
     .wrapper {
         max-width: 1000px;
         height: 100%;
         margin: auto;
+        // pointer-events: none;
 
 
         .textContainer {
@@ -37,6 +45,11 @@
                 text-align: center;
             }
 
+            div{
+                
+                width:700px;
+            }
+
             h2 {
                 font-size: 30px;
                 color: rebeccapurple;
@@ -52,6 +65,7 @@
             }
 
             .buttons {
+                
                 button {
                     padding: 20px;
                     border: 1px solid white;
@@ -103,6 +117,7 @@
         color: #ffffff09;
         width: 50%;
         font-weight: bold;
+        z-index: -1;
     }
 
 }

@@ -1,8 +1,10 @@
 import React from 'react'
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
 import { motion } from 'framer-motion'
-import ParticlesComponent from '../Particles'
+// import ParticlesComponent from '../Particles'
+
 import './hero.scss'
+import MatterComponent from '../MatterComponent'
 
 const textVariants = {
     initial: {
@@ -48,15 +50,18 @@ const Hero = () => {
     return (
         <div className='hero'>
             {/* <ParticlesComponent id='particles'/> */}
+            {/* <MatterComponent id='matter'/> */}
             <div className="wrapper">
                 <motion.div className="textContainer" variants={textVariants} initial='initial' animate='animate' >
                     <motion.h2 variants={textVariants} >Sushil Verma</motion.h2>
+                    <div className='text'>
                     <motion.h1 variants={textVariants} > I'm a <motion.span variants={textVariants} style={{ fontSize: '50px', color: 'green', fontWeight: 'bold' }} >{typeEffect} <Cursor /></motion.span> </motion.h1>
+                    </div>
                     <motion.div variants={textVariants} className="buttons">
-                        <motion.button variants={textVariants} >See my latest Works</motion.button>
-                        <motion.button variants={textVariants} >Contact Me</motion.button>
+                        <a href="#Projects"><motion.button variants={textVariants} >See my latest Works</motion.button></a>
+                        <a href="#Contact"><motion.button variants={textVariants} >Contact Me</motion.button></a>
                     </motion.div>
-                    <motion.img variants={textVariants} animate='scrollButton' src="/scroll.png" alt="scroll" />
+                    <a href="#Skills"><motion.img variants={textVariants} animate='scrollButton' src="/scroll.png" alt="scroll" /></a>
                 </motion.div>
             </div>
             <motion.div variants={sliderVariants} initial='initial' animate='animate' className="slidingTextContainer">Web Developer React Dev</motion.div>
